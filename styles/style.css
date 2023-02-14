@@ -33,6 +33,12 @@ header {
     border-radius: .5rem;
 }
 
+.get-startedbtn:hover{
+    padding: .6rem 1.9rem;
+    background-color: #d2dde6;
+    color: black;
+}
+
 /* banner */
 .row h2 {
     font-size: 48px;
@@ -60,12 +66,22 @@ header {
     font-weight: 500;
 }
 
+.btn-1:hover{
+    background-color: #c6c9bb;
+    color: black;
+}
+
 .btn-2 {
     text-decoration: none;
-    border: 2px solid #40A3F8;
+    border: 1px solid #40A3F8;
     padding: .5rem 1rem;
     border-radius: .4rem;
     font-weight: 500;
+}
+
+.btn-2:hover{
+    color: black;
+    background-color: aqua;
 }
 
 /* Easy step solution */
@@ -81,8 +97,22 @@ header {
     margin-bottom: 4rem;
 }
 
-.box {
+.box{
     padding: 2.2rem;
+}
+
+.box:hover {
+    padding: 2.2rem;
+    box-shadow:
+        7.9px 6.7px 2.1px rgba(0, 0, 0, 0.024),
+        15.4px 13.2px 4.7px rgba(0, 0, 0, 0.029),
+        22.8px 19.5px 8px rgba(0, 0, 0, 0.03),
+        30.2px 25.9px 12.3px rgba(0, 0, 0, 0.03),
+        38.1px 32.7px 18.2px rgba(0, 0, 0, 0.03),
+        47.4px 40.6px 26.8px rgba(0, 0, 0, 0.03),
+        60.3px 51.6px 40.2px rgba(0, 0, 0, 0.031),
+        83.4px 71.4px 64px rgba(0, 0, 0, 0.035),
+        146px 125px 120px rgba(0, 0, 0, 0.05);
 }
 
 
@@ -107,7 +137,7 @@ header {
 }
 
 /* service section */
-.service-section{
+.service-section {
     margin-top: 7rem;
 }
 
@@ -121,6 +151,11 @@ header {
     color: #fff;
     padding: .5rem 1rem;
     border-radius: .4rem;
+}
+
+.services a:hover{
+    color: #ecdcdc;
+    background-color: coral;
 }
 
 /* online doctor section */
@@ -142,12 +177,17 @@ header {
     margin: 6rem 0;
 }
 
-.buttun a{
+.buttun a {
     text-decoration: none;
     background-color: #0d6efd;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 7px;
+}
+
+.buttun a:hover{
+    color: rgb(36, 34, 34);
+    background-color: #a7db6a;
 }
 
 .doctors {
@@ -162,10 +202,8 @@ header {
     border-radius: 10px;
 }
 
-.image-3 {
-    width: 200px;
-    height: 230px;
-    color: #b4e6de;
+.doctor .icons {
+    color: #0d6efd;
 }
 
 @media (max-width: 767.98px) {
@@ -182,27 +220,66 @@ header {
     }
 }
 
-.app-section{
+.app-section {
     margin-bottom: 6rem;
 }
 
 /* booking section */
-.booking-section{
+.booking-section {
     margin-bottom: 10rem;
+    height: 341px;
+    background-color: #40A3F8;
+    border-radius: 10px;
+    padding-top: 123px;
+    padding-left: 100px;
+}
+.booking-section h2{
+    position: relative;
+    font-size: 40px;
 }
 
-.booking {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.booking-section h2::after{
+    content: "";
+    top: -233px;
+    right: -30px;
+    width: 600px;
+    height: 452px;
+    /* background-color: #01090f; */
+    background-image: url("../images/smiling-young-female-doctor-wearing-medical-robe-with-stethoscope-spreading-hand-isolated-green-wall\ 1.png");
+    position: absolute;
 }
 
+.booking-section a{
+    text-decoration: none;
+    color: rgb(17, 13, 13);
+    background-color: white;
+    padding: .6rem 1.2rem;
+    border-radius: 5px;
+}
+
+.booking-section a:hover{
+    color: white;
+    background-color: #a7db6a;
+}
+
+@media (max-width: 767.98px) {
+    .booking-section h2::after{
+        background-image: none;
+    }
+}
+
+@media (max-width: 575.98px){
+    .booking-section h2::after{
+        background-image: none;
+    }
+}
 
 /* footer */
-.footer-logo h2{
+.footer-logo h2, .footer-icons {
     color: #55ADF9;
 }
 
-.copyright{
+.copyright {
     display: grid;
     grid-template-columns: repeat(2 1fr);
 }
