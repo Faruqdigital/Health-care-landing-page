@@ -6,33 +6,129 @@
 
 header {
     background-color: #EFF6F5;
+    margin-bottom: 4rem;
 }
 
+/* navbar */
+.logo {
+    color: #40A3F8;
+    font-weight: 700;
+}
+
+.navbar ul li {
+    margin-right: 2rem;
+}
+
+.navbar ul li a {
+    color: #6E5F5F;
+    font-weight: 500;
+}
+
+.get-startedbtn {
+    text-decoration: none;
+    background-color: #40A3F8;
+    color: white;
+    font-weight: 500;
+    padding: .5rem 1.8rem;
+    border-radius: .5rem;
+}
+
+/* banner */
+.row h2 {
+    font-size: 48px;
+    line-height: 70px;
+    line-height: 124%;
+    color: #3E3E3E;
+}
+
+.row h2 span {
+    color: #40A3F8;
+}
+
+.row p {
+    font-size: 14px;
+    line-height: 30px;
+    color: #757575;
+}
+
+.btn-1 {
+    text-decoration: none;
+    background-color: #40A3F8;
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: .2rem;
+    font-weight: 500;
+}
+
+.btn-2 {
+    text-decoration: none;
+    border: 2px solid #40A3F8;
+    padding: .5rem 1rem;
+    border-radius: .4rem;
+    font-weight: 500;
+}
 
 /* Easy step solution */
+.easy-step h2 {
+    font-size: 42px;
+    line-height: 70px;
+}
 
 .boxes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 80px;
+    gap: 10px;
+}
+
+.box {
+    padding: 2.2rem;
 }
 
 
+
+@media (max-width: 767.98px) {
+    .boxes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .boxes {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .box {
+        padding: 0 5rem;
+        gap: 0px;
+    }
+
+}
+
 /* service section */
+.service-section p{
+    color: #777778;
+}
 
-
-
-
-
-
-
-
-
-
+.services a {
+    text-decoration: none;
+    background-color: #40A3F8;
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: .4rem;
+}
 
 /* online doctor section */
+.online-doctors h2 {
+    font-size: 42px;
+     line-height: 49px;
+     letter-spacing: 2%;
+}
 
-
+.online-doctors p{
+    color: #777778;
+}
 
 .doctors {
     background-color: aquamarine;
@@ -40,13 +136,10 @@ header {
     grid-template-columns: repeat(4, 1fr);
 }
 
-.booking{
+.booking {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
 
 /* footer */
-.footer-details{
-    /* display: grid; */
-}
