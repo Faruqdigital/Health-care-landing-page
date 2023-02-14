@@ -78,6 +78,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    margin-bottom: 4rem;
 }
 
 .box {
@@ -103,11 +104,14 @@ header {
         padding: 0 5rem;
         gap: 0px;
     }
-
 }
 
 /* service section */
-.service-section p{
+.service-section{
+    margin-top: 7rem;
+}
+
+.service-section p {
     color: #777778;
 }
 
@@ -120,20 +124,71 @@ header {
 }
 
 /* online doctor section */
-.online-doctors h2 {
-    font-size: 42px;
-     line-height: 49px;
-     letter-spacing: 2%;
+.online-doctors {
+    margin-top: 6rem;
 }
 
-.online-doctors p{
+.online-doctors h2 {
+    font-size: 42px;
+    line-height: 49px;
+    letter-spacing: 2%;
+}
+
+.online-doctors p {
     color: #777778;
 }
 
+.buttun {
+    margin: 6rem 0;
+}
+
+.buttun a{
+    text-decoration: none;
+    background-color: #0d6efd;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 7px;
+}
+
 .doctors {
-    background-color: aquamarine;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.doctor img {
+    width: 200px;
+    height: 230px;
+    border-radius: 10px;
+}
+
+.image-3 {
+    width: 200px;
+    height: 230px;
+    color: #b4e6de;
+}
+
+@media (max-width: 767.98px) {
+    .doctors {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .doctors {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.app-section{
+    margin-bottom: 6rem;
+}
+
+/* booking section */
+.booking-section{
+    margin-bottom: 10rem;
 }
 
 .booking {
@@ -143,3 +198,11 @@ header {
 
 
 /* footer */
+.footer-logo h2{
+    color: #55ADF9;
+}
+
+.copyright{
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+}
