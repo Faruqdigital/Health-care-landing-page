@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+}
+
+/* header */
+
+header {
+    background-color: #EFF6F5;
+}
+
+
+/* Easy step solution */
+
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+}
+
+
+/* service section */
+
+
+
+
+
+
+
+
+
+
+
+/* online doctor section */
+
+
+
+.doctors {
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.booking{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* footer */
+.footer-details{
+    /* display: grid; */
+}
